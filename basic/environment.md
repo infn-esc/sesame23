@@ -22,12 +22,14 @@ and
 
 ## Wi-Fi access
 
-TODO: which networks are available? eduroam?
+The `eduroam` network is available. In case your home institute is not part of
+the `eduroam` federation, ask the organization for an alternative access upon
+your arrival.
 
 ## SSH access to school computers
 
 You have been assigned a personal account, with a username of the form
-`studentNM`, where `NM` is a number between ?? and ??. You should have received
+`studentN`, where `N` is a number between 85 and 103. You should have received
 a mail from _sysop@cnaf.infn.it_ with subject _Account at CNAF_, including the
 credentials and the instructions to log on the CNAF gateway host. In the
 following, when you see `student`, replace it with your personal account.
@@ -123,14 +125,7 @@ The repository contains also these pages.
 
 * Log into `esc`.
 
-* Check the following commands and the respective outputs.
-
-```shell
-[student@esc ~]$ perf --version
-perf version 3.10.0-957.5.1.el7.x86_64.debug
-```
-
-* Enable the use of gcc 9.2 (TODO: or 12?) and check that it's available
+* Enable the use of gcc 9.2 and check that it's available
 
 ```shell
 [student@esc ~]$ module load compilers/gcc-9.2.0_sl7
