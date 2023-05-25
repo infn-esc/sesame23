@@ -121,7 +121,7 @@ All the school hands-on material is included in a git repository. Get it using:
 
 The repository contains also these pages.
 
-## Testing the environment
+## Enable the compiler
 
 * Log into `esc`.
 
@@ -132,6 +132,34 @@ The repository contains also these pages.
 [student@esc ~]$ gcc --version
 gcc (GCC) 9.2.0
 ...
+```
+
+To guarantee that the module is always loaded in the environment, you can add
+the following at the end of the shell initialization file.
+
+```shell
+[student@esc ~]$ echo 'module load compilers/gcc-9.2.0_sl7' >> ${HOME}/.bashrc
+```
+
+## Install oneAPI Threading Building Blocks
+
+Let's install the latest release of oneAPI TBB.
+
+```shell
+[student@esc ~]$ wget https://github.com/oneapi-src/oneTBB/releases/download/v2021.9.0/oneapi-tbb-2021.9.0-lin.tgz
+[student@esc ~]$ sha256sum oneapi-tbb-2021.9.0-lin.tgz
+1e8f4d584c209b1a1d1935e72c0a86c16e65e6d2859cb96736ec6ed72c6123f5  oneapi-tbb-2021.9.0-lin.tgz
+[student@esc ~]$ tar zxf oneapi-tbb-2021.9.0-lin.tgz
+[student@esc ~]$ export TBBROOT=${HOME}/oneapi-tbb-2021.9.0
+[student@esc ~]$ source ${TBBROOT}/env/vars.sh intel64 linux auto_tbbroot
+```
+
+To guarantee that oneAPI TBB is always available in the environment, you can add
+the following at the end of the shell initialization file.
+
+```shell
+[student@esc ~]$ echo 'export TBBROOT=${HOME}/oneapi-tbb-2021.9.0' >> ${HOME}/.bashrc
+[student@esc ~]$ echo 'source ${TBBROOT}/env/vars.sh intel64 linux auto_tbbroot' >> ${HOME}/.bashrc
 ```
 
 ## Editing source code
