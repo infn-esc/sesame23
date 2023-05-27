@@ -11,8 +11,6 @@ menu:
       label: Environment
     - name: compiling
       label: Compiling
-    - name: formatting
-      label: Formatting
   - name: architecture
     label: ARCHITECTURE
     items:
@@ -25,40 +23,16 @@ menu:
     items:
     - name: algorithms
       label: Algorithms
-    - name: issues
-      label: Memory issues
     - name: pointers
       label: Managing resources
     - name: move_ops
       label: Move operations
     - name: rvo
       label: Return Value Optimization
-    - name: layout
-      label: Data layout in memory
     - name: containers
       label: Containers
     - name: compiletime
       label: Compile-time computation
-  -
-    name: floatingpoints
-    label: FLOATING POINT
-    items:
-    - name: fprep
-      label: Floating-Point Representation
-    - name: fpcommutative
-      label: Commutative sum
-    - name: fpquadratic
-      label: Quadratic Equation
-    - name: fppi
-      label: Pi approximation error
-    - name: fpsafemath
-      label: Floating-Point Optimizations
-  -
-    name: vectorization
-    label: VECTORIZATION
-    items:
-    - name: pi
-      label: Vectorize computation of pi
   - name: parallelism
     label: PARALLELISM
     items:
