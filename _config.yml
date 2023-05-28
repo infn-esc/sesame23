@@ -1,7 +1,7 @@
 highlighter: rouge
 baseurl: /sesame23
 menu_header: ESC@SESAME 2023
-exercises_repo: https://github.com/infn-esc/sesame23/blob/master
+exercises_repo: https://github.com/infn-esc/sesame23/blob/main
 menu:
   -
     name: basic
