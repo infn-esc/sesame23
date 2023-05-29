@@ -3,7 +3,7 @@
 ./heap-fragmentor &
 PID=$!
 
-trap "kill $PID" EXIT
+trap "kill $PID" SIGINT
 
 while [ -d /proc/$PID/ ]; do
   VSS=$(grep '^VmSize:' /proc/$PID/status | awk '{print $2}')
