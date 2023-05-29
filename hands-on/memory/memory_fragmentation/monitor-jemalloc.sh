@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2 ./heap-fragmentor &
+LD_PRELOAD=/home/HPC/giacohpc/.local/lib/libjemalloc.so.2 ./heap-fragmentor &
 PID=$!
 
 while [ -d /proc/$PID/ ]; do
