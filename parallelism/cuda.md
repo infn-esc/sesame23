@@ -11,7 +11,12 @@ The CUDA Runtime API reference manual is a very useful source of information:
 If you haven't already done it, load the CUDA module
 
 ```shell
-$ module load compilers/cuda-11.2
+$ module load compilers/cuda-12.1
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2023 NVIDIA Corporation
+Built on Mon_Apr__3_17:16:06_PDT_2023
+Cuda compilation tools, release 12.1, V12.1.105
+Build cuda_12.1.r12.1/compiler.32688072_0
 ```
 
 Check that your environment is correctly configured to compile CUDA code by running:
