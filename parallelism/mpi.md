@@ -34,7 +34,7 @@ fi
 Moreover replace the lines in your .bashrc so that it appears like the following
 
 ```shell
-$ cat .bash_profile
+$ cat .bashrc
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
